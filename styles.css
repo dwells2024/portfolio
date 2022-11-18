@@ -1,5 +1,24 @@
+nav {
+    background-color: darkgray;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    box-shadow: 0px 4px 4px black;
+}
+
+nav [aria-current=page] {
+    background-color: #bbb;
+    color: #000;
+    border-bottom: .25em solid #444;
+}
+
 nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+}
+
+nav li {
+	display: inline;
 }
