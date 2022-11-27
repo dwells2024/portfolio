@@ -1,27 +1,29 @@
+:root {
+    --base: #000000;
+    --acc1: #14213D;
+    --acc2: #FCA311;
+    --acc3: #E5E5E5;
+    --main: #FFFFFF;
+}
+
 html, body {
     height: 100%;
     width: 100%;
     margin: 0;
     overflow: hidden;
     font-family: 'Roboto', sans-serif;
-    color: whitesmoke;
+    color: var(--main);
 }
 
 nav {
-    background-color: rgb(52,61,70);
+    background-color: var(--acc1);
     position: fixed;
     top: 0px;
-    /* left: 0px; */
     width: 100%;
     height: 50px;
-    box-shadow: 0px 10px 10px whitesmoke;
+    border-bottom: 4px solid var(--acc3);
+    /* box-shadow: 0px 10px 10px var(--acc3); */
     font-size: 16pt;
-}
-
-nav [aria-current=page] {
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 7px;
 }
 
 nav ul {
@@ -64,17 +66,96 @@ nav li.home-button i {
 
 nav a {
     text-decoration: none;
+    color: var(--main);
 }
 
 nav a:visited {
     display: flex;
-    color: whitesmoke;
+    color: var(--main);
+}
+
+nav [aria-current=page] {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 7px;
 }
 
 main {
     padding-top: 60px;
     height: 100%;
     padding-left: 10px;
-    background-color: rgb(52,61,70);
+    background-color: var(--base);
 
+}
+
+.about-page {
+    width: 100%;
+    height: 75%;
+    transform: translateY(5%);
+}
+
+.about-wrapper {
+    float: left;
+    width: 70%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    vertical-align: middle;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.about-text {
+    width: 90%;
+    margin-left: 5%;
+    padding: 0;
+}
+
+.about-title {
+    text-align: center;
+    font-size: 36pt;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.about-text a {
+    color: var(--main);
+}
+
+.about-subtitle {
+    text-align: center;
+    font-size: 24pt;
+    margin: 10px;
+}
+
+.profile-pic-wrapper {
+    width: auto;
+    margin: 0;
+    margin-left: 70%;
+    height: 100%;
+}
+
+img.profile-pic {
+    max-height: 80%;
+    max-width: 80%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    outline: 1px solid var(--acc3);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main);
+    border-radius: 5px;
 }
