@@ -46,7 +46,7 @@ function createProjects(projects, id){
                 container.className = "project";
                 container.innerHTML = html;
                 container.onclick = function () {toggleProject(index)};
-                container.tabIndex = index;
+                // container.tabIndex = index;
                 selector.append(container);
             }
         }
