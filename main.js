@@ -16,8 +16,8 @@ var projects = [
     {
         name: "The Aquasystem",
         date: "January 2021 - March 2021",
-        img: "imgs/aquasystem.jpg",
-        alt: "Image of a prototype for The Aquasystem. A box frame with rows of re-used water bottles serving as the floatation device and planting area for native plants.",
+        img: "imgs/aquasyste.jpg",
+        alt: 'Picture of a prototype for The Aquasystem. A box frame with rows of re-used water bottles serving as the floatation device and planting area for native plants.',
         description: "As part of Northwestern's Design Thinking and Communication Course, I worked with a team to create a floating garden for native plants that the Friends of the Chicago River could attach to the seawall. The design is a hydroponic bed with rows of re-used plastic bottles that serve as the floatation device."
     },
     {
@@ -38,7 +38,7 @@ function createProjects(projects, id){
                 let index = projects.indexOf(project);
                 let html = `
                     <div class="project-name">${project.name}</div>
-                    <img class="project-img" id="pi-${index.toString()}" src=${project.img} alt=${project.alt}></img>
+                    <img class="project-img" id="pi-${index.toString()}" src="${project.img}" alt="${project.alt}")></img>
                     <div class="project-desc hidden" id="pd-${index.toString()}">${project.description}</div>
                 `
 

@@ -63,7 +63,7 @@ nav li.nav-title {
     /* left: 50%;
     transform: translateX(-100px); */
     /* margin-left: -100px; */
-    margin-left: calc(50% - 190px);
+    margin-left: calc(50% - 100px);
     margin-right: auto;
     font-size: 20pt;
     font-weight: bold;
