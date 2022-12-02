@@ -16,7 +16,7 @@ var projects = [
     {
         name: "The Aquasystem",
         date: "January 2021 - March 2021",
-        img: "imgs/aquasyste.jpg",
+        img: "imgs/aquasystem.JPG",
         alt: 'Picture of a prototype for The Aquasystem. A box frame with rows of re-used water bottles serving as the floatation device and planting area for native plants.',
         description: "As part of Northwestern's Design Thinking and Communication Course, I worked with a team to create a floating garden for native plants that the Friends of the Chicago River could attach to the seawall. The design is a hydroponic bed with rows of re-used plastic bottles that serve as the floatation device."
     },
